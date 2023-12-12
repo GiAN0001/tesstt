@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freaks Guitar Shop | Electric guitars</title>
+    <link rel="icon" type = "img/svg" href="../photos/freak-logo2.png">
+    <script src="https://kit.fontawesome.com/73498a0f31.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/all-instruments.css">
+</head>
+<body>
+    <header class="first-nav-container first-nav-grid">
+        <nav class="nav-contents1">
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="logo">
+                <a href="homepage.html" class="logo-png">
+                    <img src="../photos/freak_logo.svg" alt="logo" class="logo-pic">
+                </a>
+            </div>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="SEARCH...">
+            </div>
+            <a href="cart.html" class="cart-link"><i class="fa-solid fa-cart-shopping"></i></a>
+        </nav>
+    </header>
+    <nav class="link-nav-bg link-nav-grid">
+        <div class="links">
+            <ul>
+                <li><a href="e-guitars.html">ELECTRICS</a></li>
+                <li><a href="acoustic.html">ACOUSTICS</a></li>
+                <li><a href="bass.html">BASSES</a></li>
+                <li><a href="amps.html">AMPS</a></li>
+                <li><a href="acce.html">ACCESSORIES</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="search-mobile">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="SEARCH...">
+    </div>
+    <div class="main-contents-grid">
+        <div class="main-content-container">
+            <div class="side-bar-links">
+                <h3 class="sidebar-header">
+                     Electric guitars
+                </h3>
+                <ul>
+                    <li><a href="e-guitars.html">Electric Guitars</a></li>
+                    <li><a href="acoustic.html">Acoustic Guitars</a></li>
+                    <li><a href="bass.html">Bass Guitars</a></li>
+                    <li><a href="amps.html">Amplifiers</a></li>
+                    <li><a href="acce.html">Accessories</a></li>
+                </ul>
+                <h3 class="sidebar-header">
+                    Brands
+                </h3>
+                <ul>
+                    <li><a href="#">Ernie ball</a></li>
+                    <li><a href="#">Ibanez</a></li>
+                    <li><a href="#">Tagima</a></li>
+                </ul>
+            </div>
+            <div class="prod-contents">
+                <div class="filter">
+                        <h5>Sort By:</h5>
+                    <select name="Sort">
+                        <option> Latest</option>
+                        <option> Oldest</option>
+                    </select>
+                </div>
+                <div class="prod-image">
+                    <div class="media-element">
+                        <a href="ernieballJP.html">
+                            <img src="../photos/ernieball.png" alt="ernieball guitar">
+                            <div class = "description">
+                                <h3>ernie ball music man John Petrucci</h1>
+                                <p>230,000 PHP</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="media-element">
+                        <a href="#">
+                            <img src="../photos/GRG121DX_BKF-1280x854.png" alt="Ibanez guitar">
+                            <div class="description">
+                                <h3>Ibanez GRG121DX-BKF GIO</h1>
+                                <p>14,000 PHP</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="media-element">
+                        <a href="#">
+                            <img src="../photos/tagima tg 500.jpg" alt="tagima guitar">
+                            <div class="description">
+                                <h3>TAGIMA TG 500</h1>
+                                <p>8,400 PHP</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-grid">
+        <div class="footer-content">
+            <div class="footer-links">
+                <h3>STAY TUNED!</h3>
+                <div class="about-link">
+                    <a href="about.html" class="about">ABOUT US</a>
+                </div>
+                <h3>CONTACT US</h3>
+                <div class="icons-contact">
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+                <div class="links-footer">
+                    <h3>SHOP FREAKS MUSIC</h3>
+                    <a href="#">GUITARS</a>
+                    <a href="#">AMPLIFIERS</a>
+                    <a href="#">BASS</a>
+                    <a href="#">ACCESSORIES</a>
+                </div>
+            </div>
+            <div class="email-text">
+                <h3>GET EMAIL FROM US</h3>
+                <div class="wrapper-text">
+                    <input type="text" placeholder="ENTER EMAIL ADDRESS">
+                    <button formaction="#">SIGN UP</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        const toggleButon = document.getElementsByClassName('toggle-button')[0]
+        const navbarLinks = document.getElementsByClassName('link-nav-bg')[0]
+
+        toggleButon.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active')
+            navbarLinks.classList.add('link--transition')
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type = "img/svg" href="../photos/freak-logo2.png">
+    <script src="https://kit.fontawesome.com/73498a0f31.js" crossorigin="anonymous"></script>
+    <title>Freaks Guitar Shop | Takamine DG 20</title>
+    <link rel="stylesheet" href="../styles/takamineDG20.css">
+</head>
+<body>
+    <header class="first-nav-container first-nav-grid">
+        <nav class="nav-contents1">
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="logo">
+                <a href="homepage.html" class="logo-png">
+                    <img src="../photos/freak_logo.svg" alt="logo" class="logo-pic">
+                </a>
+            </div>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="SEARCH...">
+            </div>
+            <a href="cart.html" class="cart-link"><i class="fa-solid fa-cart-shopping"></i></a>
+        </nav>
+    </header>
+    <nav class="link-nav-bg link-nav-grid">
+        <div class="links">
+            <ul>
+                <li><a href="e-guitars.html">ELECTRICS</a></li>
+                <li><a href="acoustic.html">ACOUSTICS</a></li>
+                <li><a href="bass.html">BASSES</a></li>
+                <li><a href="amps.html">AMPS</a></li>
+                <li><a href="acce.html">ACCESSORIES</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="search-mobile">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="SEARCH...">
+    </div>
+    <div class="prod-title">
+        <h3>Takamine DG 20</h3>
+    </div>
+    <div class="product-content-grid">
+        <div class="product-container">
+            <div class="image-details-container">
+                <div class="img-src">
+                    <img src="../photos/takamineDG20.png" alt="Ernie ball music man John Petrucci">
+                </div>
+                <div class="product-details">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Eligendi nostrum magnam dolore assumenda nisi commodi aperiam, 
+                        modi vitae nemo necessitatibus dolorum voluptatibus ullam veniam 
+                        blanditiis dicta fugit optio, excepturi odit!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Id officia ullam ea ipsam cum, dignissimos quia corporis 
+                        consequuntur expedita molestiae error deserunt magni minus 
+                        unde nam voluptatem. Dignissimos, eligendi repudiandae.
+                    </p>
+                    <h3>10,000 PHP</h3>
+                    <div class="qntty-wrapper">
+                        <select name="quantity">
+                            <option selected = "selected">QUANTITY</option>
+                            <option> 1</option>
+                            <option> 2</option>
+                            <option> 3</option>
+                            <option> 4</option>
+                            <option> 5</option>
+                        </select>
+                    </div>
+                    <form action="cart.html" class="add-to-cart">
+                        <button class="addtocart" onclick="myFunction()">ADD TO CART</button>
+                    </form>
+                </div>
+            </div>
+            <div class="product-features">
+                <div class="features-header">
+                    <h3>Features</h3>
+                </div>
+                <div class="features-details">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Doloribus molestiae perspiciatis minima accusantium exercitationem ipsum 
+                        libero, repellendus dolores dolorem? Ullam quisquam assumenda dolore sequi 
+                        commodi sed nostrum soluta tempora nesciunt.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Doloribus molestiae perspiciatis minima accusantium exercitationem ipsum 
+                        libero, repellendus dolores dolorem? Ullam quisquam assumenda dolore sequi 
+                        commodi sed nostrum soluta tempora nesciunt.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Doloribus molestiae perspiciatis minima accusantium exercitationem ipsum 
+                        libero, repellendus dolores dolorem? Ullam quisquam assumenda dolore sequi 
+                        commodi sed nostrum soluta tempora nesciunt.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-grid">
+        <div class="footer-content">
+            <div class="footer-links">
+                <h3>STAY TUNED!</h3>
+                <div class="about-link">
+                    <a href="about.html" class="about">ABOUT US</a>
+                </div>
+                <h3>CONTACT US</h3>
+                <div class="icons-contact">
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+                <div class="links-footer">
+                    <h3>SHOP FREAKS MUSIC</h3>
+                    <a href="#">GUITARS</a>
+                    <a href="#">AMPLIFIERS</a>
+                    <a href="#">BASS</a>
+                    <a href="#">ACCESSORIES</a>
+                </div>
+            </div>
+            <div class="email-text">
+                <h3>GET EMAIL FROM US</h3>
+                <div class="wrapper-text">
+                    <input type="text" placeholder="ENTER EMAIL ADDRESS">
+                    <button formaction="#">SIGN UP</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        const toggleButon = document.getElementsByClassName('toggle-button')[0]
+        const navbarLinks = document.getElementsByClassName('link-nav-bg')[0]
+
+        toggleButon.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active')
+            navbarLinks.classList.add('link--transition')
+        })
+        function myFunction() {
+          alert("Items can't be add to cart yet");
+        }
+    </script>
+</body>
+</html>
